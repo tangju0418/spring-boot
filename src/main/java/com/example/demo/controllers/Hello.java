@@ -26,4 +26,9 @@ public class Hello {
     public String getMessage(@PathVariable("messageId") String messageId){
         return messageId;
     }
+
+    @PostMapping("message/search")
+    public String searchMessage(@RequestBody String str){
+        return str;
+    }
 }
